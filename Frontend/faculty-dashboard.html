@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Student Sync</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+<nav class="bg-white shadow-sm sticky top-0 z-10 flex justify-between h-16 items-center px-6">
+  <a href="index.html" class="font-bold text-xl">Student Sync</a>
+  <div class="space-x-4">
+    <a href="index.html" class="hover:text-primary">Home</a>
+    <a href="logout.html" class="hover:text-red-600">Logout</a>
+  </div>
+</nav>
+
+<div class="max-w-7xl mx-auto p-6">
+  <h1 class="text-3xl font-bold mb-6">Dashboard</h1>
+  <p>Welcome! Students can view and apply for events. Faculty can post, edit, and delete events.</p>
+</div>
+
+<script>
+  feather.replace();
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faculty Dashboard - Student Sync</title>
+<link rel="icon" href="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/svg/unstop-logo.svg">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+<nav class="bg-white shadow-sm sticky top-0 z-10 flex justify-between items-center max-w-7xl mx-auto px-4 h-16">
+    <div class="flex items-center">
+        <img src="https://huggingface.co/spaces/Zenitsu43/undefined/resolve/main/images/Logo.png" alt="Logo" class="h-8">
+        <span class="ml-2 text-xl font-bold text-gray-800">Student Sync</span>
+    </div>
+    <div class="flex space-x-6 items-center">
+        <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="create-event.html" class="px-3 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700">Create Event</a>
+        <span class="text-sm bg-green-100 text-green-800 px-2 py-1 rounded-full flex items-center">
+            Verified
+        </span>
+    </div>
+</nav>
+
+<div class="max-w-7xl mx-auto px-4 py-8">
+    <h1 class="text-2xl font-bold mb-6">Faculty Dashboard</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-sm text-gray-500">Total Events</p>
+            <h3 class="text-2xl font-bold">12</h3>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-sm text-gray-500">Upcoming Events</p>
+            <h3 class="text-2xl font-bold">4</h3>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-sm text-gray-500">Participants</p>
+            <h3 class="text-2xl font-bold">1,248</h3>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="border-b border-gray-200 px-6 py-4">
+            <h2 class="text-lg font-semibold">Your Recent Events</h2>
+        </div>
+        <div class="divide-y divide-gray-200">
+            <div class="p-6 flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <h3 class="font-bold text-lg">Tech Symposium 2025</h3>
+                    <p class="text-gray-600 text-sm">Oct 15-16, 2025 | Virtual</p>
+                    <div class="flex mt-2 space-x-2">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Technical</span>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Active</span>
+                    </div>
+                </div>
+                <div class="flex space-x-2 mt-2 md:mt-0">
+                    <a href="#" class="px-3 py-1 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700">Edit</a>
+                    <a href="#" class="px-3 py-1 bg-green-600 text-white text-sm rounded-md hover:bg-green-700">View</a>
+                    <a href="#" class="px-3 py-1 bg-red-600 text-white text-sm rounded-md hover:bg-red-700">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
